@@ -5,7 +5,7 @@
       <tab-list>
         <li v-for="(tab, index) in tabPanes"
           role="tab"
-          :class="{ 'is-active': isActived(index), 'is-disabled': tab.disabled, 'is-flex': true }"
+          :class="{ 'is-active': isActived(index), 'is-disabled': tab.disabled, 'is-flex': tab.flex }"
           :aria-selected="isActived(index) ? 'true' : 'false'"
           :aria-expanded="isActived(index) ? 'true' : 'false'"
           :aria-disabled="tab.disabled ? 'true' : 'false'"

@@ -71,6 +71,10 @@ export default {
     mode: {
       type: String,
       default: 'out-in'
+    },
+    flex: {
+      type: Boolean,
+      default: true
     }
   },
 
